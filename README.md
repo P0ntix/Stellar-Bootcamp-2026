@@ -65,10 +65,6 @@ cargo install --locked stellar-cli
 
 - [Freighter Wallet](https://freighter.app) (browser extension), set to **Testnet**
 
-### Step 2 - Get Your Assigned Contract
-
-Your facilitator will share the assigned smart contract during the session.
-
 - **macOS (Terminal):**
 
 ```bash
