@@ -65,21 +65,7 @@ cargo install --locked stellar-cli
 
 - [Freighter Wallet](https://freighter.app) (browser extension), set to **Testnet**
 
-- **macOS (Terminal):**
-
-```bash
-git clone <facilitator-provided-repo-link>
-cd <contract-folder>
-```
-
-- **Windows (PowerShell):**
-
-```powershell
-git clone <facilitator-provided-repo-link>
-Set-Location <contract-folder>
-```
-
-### Step 3 - Complete the Contract
+### Step 2 - Complete the Contract
 
 Open `src/lib.rs` and complete the contract logic as instructed.
 
@@ -97,7 +83,7 @@ cargo test
 cargo test
 ```
 
-### Step 4 - Deploy to Stellar Testnet
+### Step 3 - Deploy to Stellar Testnet
 
 **Create an identity (first time only):**
 
@@ -198,7 +184,7 @@ Verify on Stellar Expert:
 https://stellar.expert/explorer/testnet/contract/<YOUR_CONTRACT_ID>
 ```
 
-### Step 5 - Submit on Rise In
+### Step 4 - Submit on Rise In
 
 Submit the following on your Rise In program page:
 
@@ -359,34 +345,101 @@ For **Prize Pool Joiner Submission**:
 ├── backend/ (optional)
 ├── scripts/
 │   ├── build-contract.sh
+│   ├── build-contract.ps1
 │   ├── deploy-testnet.sh
-│   └── seed-data.sh
+│   └── deploy-testnet.ps1
 ├── codes/
 │   ├── contract-snippets/
 │   ├── frontend-snippets/
 │   └── backend-snippets/
-└── learning/
-    ├── hello-world/
+├── learning/
+│   ├── hello-world/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── rust-syntax/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── variables-and-types/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── conditionals-and-loops/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── functions-and-errors/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── state-storage/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── events/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── auth-and-admin/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── maps-and-keys/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── token-ledger-basics/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── enums-and-matches/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── structs-and-methods/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   ├── storage-ttl/
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── test.rs
+│   └── scripts/
+│       ├── run-tests.sh
+│       └── run-tests.ps1
+└── soroban-examples/
+    ├── hello-soroban/
+    │   ├── Cargo.toml
     │   └── src/
     │       ├── lib.rs
     │       └── test.rs
-    ├── rust-syntax/
+    ├── counter-storage/
+    │   ├── Cargo.toml
     │   └── src/
     │       ├── lib.rs
     │       └── test.rs
-    ├── variables-and-types/
+    ├── auth-check/
+    │   ├── Cargo.toml
     │   └── src/
     │       ├── lib.rs
     │       └── test.rs
-    ├── conditionals-and-loops/
+    ├── events-demo/
+    │   ├── Cargo.toml
     │   └── src/
     │       ├── lib.rs
     │       └── test.rs
-    └── functions-and-errors/
-        └── src/
-            ├── lib.rs
-            └── test.rs
+    ├── simple-voting/
+    │   ├── Cargo.toml
+    │   └── src/
+    │       ├── lib.rs
+    │       └── test.rs
+    └── scripts/
+        ├── run-tests.sh
+        └── run-tests.ps1
 ```
+
+Each module under `learning/` and `soroban-examples/` should include its own `Cargo.toml`, `src/lib.rs`, and `src/test.rs`.
 
 ---
 
