@@ -11,3 +11,5 @@ soroban-sdk = "*"
 
 [dev-dependencies]
 soroban-sdk = { version = "*", features = ["testutils"] }
+
+[workspace]
