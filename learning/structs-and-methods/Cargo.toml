@@ -13,3 +13,6 @@ soroban-sdk = "*"
 soroban-sdk = { version = "*", features = ["testutils"] }
 
 [workspace]
+
+[profile.release]
+overflow-checks = true
