@@ -356,7 +356,36 @@ For **Prize Pool Joiner Submission**:
 <project-root>/
 ├── contract/
 ├── frontend/
-└── backend/ (this is optional)
+├── backend/ (optional)
+├── scripts/
+│   ├── build-contract.sh
+│   ├── deploy-testnet.sh
+│   └── seed-data.sh
+├── codes/
+│   ├── contract-snippets/
+│   ├── frontend-snippets/
+│   └── backend-snippets/
+└── learning/
+    ├── hello-world/
+    │   └── src/
+    │       ├── lib.rs
+    │       └── test.rs
+    ├── rust-syntax/
+    │   └── src/
+    │       ├── lib.rs
+    │       └── test.rs
+    ├── variables-and-types/
+    │   └── src/
+    │       ├── lib.rs
+    │       └── test.rs
+    ├── conditionals-and-loops/
+    │   └── src/
+    │       ├── lib.rs
+    │       └── test.rs
+    └── functions-and-errors/
+        └── src/
+            ├── lib.rs
+            └── test.rs
 ```
 
 ---
